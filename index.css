@@ -6,6 +6,8 @@
 
 body{
    background-color: black;
+   display: grid;
+   justify-content: center;
 }
 
 .con{
@@ -13,7 +15,7 @@ body{
     width: 600px;
     border: 1px solid black;
     margin-top: 10%;
-    margin-left: 30%;
+    /* margin-left: 30%; */
     text-align: center;
     color: white;
     box-shadow: 0px 2px 19px rgb(101, 165, 42);
@@ -101,4 +103,18 @@ height: 20px;
         color: rgb(101, 165, 42);
     }
 
+}
+
+
+@media(max-width:400px){
+    .con{
+        width: 350px;
+
+    }
+    h1{
+        font-size: 19px;
+    }
+    input::placeholder{
+        font-size: 10px;
+    }
 }
